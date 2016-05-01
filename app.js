@@ -26,6 +26,9 @@ function setData(data) {
         div.className = 'single-tab';
         div.innerHTML += `<h3>${e.title}</h3>`;
         div.innerHTML += `<p>${e.snippet}</p>`;
+        div.onclick = () => {
+            window.location.href = 'https://en.wikipedia.org/wiki/' + e.title;
+        };
         return div;
     });
 
