@@ -5,7 +5,7 @@ const enableCors = require('./cors')
 const server = new Server()
 
 server.connection({
-  port: '1337'
+  port: '1338'
 })
 
 const route = {
